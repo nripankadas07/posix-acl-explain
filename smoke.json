@@ -1,0 +1,20 @@
+[
+  {
+    "args": [
+      "sample.acl",
+      "identity.json"
+    ],
+    "exit": 0,
+    "expect": {
+      "effective_permissions": "rw-",
+      "selection": "named-user"
+    }
+  },
+  {
+    "args": [
+      "sample.acl",
+      "root.json"
+    ],
+    "exit": 2
+  }
+]

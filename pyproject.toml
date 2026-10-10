@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "posix-acl-explain"
+version = "0.1.0"
+description = "Parse numeric getfacl-style access entries and a captured identity, apply owner/named-user/group-union/other precedence and mask rules, and explain the effective rwx result."
+requires-python = ">=3.10"
+license = "MIT"
+readme = "README.md"
+authors = [{name = "Nripanka Das"}]
+[project.scripts]
+posix-acl-explain = "posix_acl_explain:main"
+[project.urls]
+Source = "https://github.com/nripankadas07/posix-acl-explain"
+Issues = "https://github.com/nripankadas07/posix-acl-explain/issues"
+[tool.setuptools]
+py-modules = ["posix_acl_explain"]

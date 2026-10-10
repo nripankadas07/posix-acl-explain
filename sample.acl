@@ -1,0 +1,6 @@
+user::rwx
+user:42:rwx
+group::r--
+group:10:-w-
+mask::rw-
+other::---
